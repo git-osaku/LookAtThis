@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08A7B8641B061FE1008BDA2E /* 上.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08A7B8631B061FE1008BDA2E /* 上.jpg */; };
+		08A7B8691B061FE9008BDA2E /* 下.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08A7B8651B061FE9008BDA2E /* 下.jpg */; };
+		08A7B86A1B061FE9008BDA2E /* 右.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08A7B8661B061FE9008BDA2E /* 右.jpg */; };
+		08A7B86B1B061FE9008BDA2E /* 前.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08A7B8671B061FE9008BDA2E /* 前.jpg */; };
+		08A7B86C1B061FE9008BDA2E /* 左.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08A7B8681B061FE9008BDA2E /* 左.jpg */; };
 		965B156C1B046A740063944C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B156B1B046A740063944C /* AppDelegate.swift */; };
 		965B156E1B046A740063944C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B156D1B046A740063944C /* ViewController.swift */; };
 		965B15711B046A740063944C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965B156F1B046A740063944C /* Main.storyboard */; };
 		965B15731B046A740063944C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965B15721B046A740063944C /* Images.xcassets */; };
 		965B15761B046A740063944C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965B15741B046A740063944C /* LaunchScreen.xib */; };
 		965B15821B046A740063944C /* LookAtThisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B15811B046A740063944C /* LookAtThisTests.swift */; };
-		965B159A1B046F960063944C /* 前.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B15951B046F960063944C /* 前.png */; };
-		965B159B1B046F960063944C /* 左.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 965B15961B046F960063944C /* 左.jpg */; };
-		965B159C1B046F960063944C /* 下.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B15971B046F960063944C /* 下.png */; };
-		965B159D1B046F960063944C /* 右.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B15981B046F960063944C /* 右.png */; };
-		965B159E1B046F960063944C /* 上.png in Resources */ = {isa = PBXBuildFile; fileRef = 965B15991B046F960063944C /* 上.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08A7B8631B061FE1008BDA2E /* 上.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "上.jpg"; sourceTree = "<group>"; };
+		08A7B8651B061FE9008BDA2E /* 下.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "下.jpg"; sourceTree = "<group>"; };
+		08A7B8661B061FE9008BDA2E /* 右.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "右.jpg"; sourceTree = "<group>"; };
+		08A7B8671B061FE9008BDA2E /* 前.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "前.jpg"; sourceTree = "<group>"; };
+		08A7B8681B061FE9008BDA2E /* 左.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "左.jpg"; sourceTree = "<group>"; };
 		965B15661B046A740063944C /* LookAtThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAtThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965B156A1B046A740063944C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965B156B1B046A740063944C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +46,6 @@
 		965B157B1B046A740063944C /* LookAtThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookAtThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965B15801B046A740063944C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965B15811B046A740063944C /* LookAtThisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAtThisTests.swift; sourceTree = "<group>"; };
-		965B15951B046F960063944C /* 前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "前.png"; path = "../../../../Desktop/前.png"; sourceTree = "<group>"; };
-		965B15961B046F960063944C /* 左.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "左.jpg"; path = "../../../../Desktop/左.jpg"; sourceTree = "<group>"; };
-		965B15971B046F960063944C /* 下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "下.png"; path = "../../../../Desktop/下.png"; sourceTree = "<group>"; };
-		965B15981B046F960063944C /* 右.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "右.png"; path = "../../../../Desktop/右.png"; sourceTree = "<group>"; };
-		965B15991B046F960063944C /* 上.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "上.png"; path = "../../../../Desktop/上.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 		965B15691B046A740063944C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				965B15951B046F960063944C /* 前.png */,
-				965B15961B046F960063944C /* 左.jpg */,
-				965B15971B046F960063944C /* 下.png */,
-				965B15981B046F960063944C /* 右.png */,
-				965B15991B046F960063944C /* 上.png */,
 				965B156A1B046A740063944C /* Info.plist */,
+				08A7B8631B061FE1008BDA2E /* 上.jpg */,
+				08A7B8651B061FE9008BDA2E /* 下.jpg */,
+				08A7B8661B061FE9008BDA2E /* 右.jpg */,
+				08A7B8671B061FE9008BDA2E /* 前.jpg */,
+				08A7B8681B061FE9008BDA2E /* 左.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,12 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A7B86A1B061FE9008BDA2E /* 右.jpg in Resources */,
 				965B15711B046A740063944C /* Main.storyboard in Resources */,
-				965B159B1B046F960063944C /* 左.jpg in Resources */,
-				965B159E1B046F960063944C /* 上.png in Resources */,
-				965B159D1B046F960063944C /* 右.png in Resources */,
-				965B159A1B046F960063944C /* 前.png in Resources */,
-				965B159C1B046F960063944C /* 下.png in Resources */,
+				08A7B8691B061FE9008BDA2E /* 下.jpg in Resources */,
+				08A7B8641B061FE1008BDA2E /* 上.jpg in Resources */,
+				08A7B86C1B061FE9008BDA2E /* 左.jpg in Resources */,
+				08A7B86B1B061FE9008BDA2E /* 前.jpg in Resources */,
 				965B15761B046A740063944C /* LaunchScreen.xib in Resources */,
 				965B15731B046A740063944C /* Images.xcassets in Resources */,
 			);
@@ -309,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -356,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LookAtThis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LookAtThis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     func rightSwipe(gestureRecognizer: UIGestureRecognizer){
         
-        imageView.image = UIImage(named: "右.png")
+        imageView.image = UIImage(named: "右.jpg")
     }
     
     func leftSwipe(gestureRecognizer: UIGestureRecognizer){
@@ -57,14 +57,14 @@ class ViewController: UIViewController {
     func upSwipe(gestureRecognizer: UIGestureRecognizer){
         
 
-        imageView.image = UIImage(named: "上.png")
+        imageView.image = UIImage(named: "上.jpg")
         
     }
     
     func downSwipe(gestureRecognizer: UIGestureRecognizer){
         
         
-        imageView.image = UIImage(named: "下.png")
+        imageView.image = UIImage(named: "下.jpg")
         
     }
 

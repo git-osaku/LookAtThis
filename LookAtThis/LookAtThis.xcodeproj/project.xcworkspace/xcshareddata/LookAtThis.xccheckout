@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2D0D8D00-B908-4C36-9582-195670F87CD5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LookAtThis</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABAB5B46CB6F0B35538EA9924A160413B930E277</key>
+		<string>https://github.com/git-osaku/LookAtThis.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LookAtThis/LookAtThis.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABAB5B46CB6F0B35538EA9924A160413B930E277</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/git-osaku/LookAtThis.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABAB5B46CB6F0B35538EA9924A160413B930E277</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABAB5B46CB6F0B35538EA9924A160413B930E277</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LookAtThis</string>
+		</dict>
+	</array>
+</dict>
+</plist>
