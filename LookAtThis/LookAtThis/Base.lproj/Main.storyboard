@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,18 +21,32 @@
                                 <rect key="frame" x="135" y="75" width="330" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="5oo-xu-AmJ"/>
+                                    <constraint firstAttribute="width" secondItem="soY-Yp-Y5k" secondAttribute="height" multiplier="11:15" id="YvO-4U-99Y"/>
                                     <constraint firstAttribute="height" constant="450" id="uK9-Dv-b6m"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-X9-Eoz">
+                                <rect key="frame" x="214" y="27" width="172" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="bng-ef-w8W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="soY-Yp-Y5k" secondAttribute="centerY" id="OFk-f2-XHL"/>
+                            <constraint firstAttribute="centerX" secondItem="X9i-X9-Eoz" secondAttribute="centerX" id="RU1-o2-mXC"/>
+                            <constraint firstItem="X9i-X9-Eoz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="7" id="nPV-bW-2Q9"/>
                             <constraint firstAttribute="centerX" secondItem="soY-Yp-Y5k" secondAttribute="centerX" id="rMt-GG-WpQ"/>
+                            <constraint firstItem="soY-Yp-Y5k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="zA7-Vz-7ph"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="soY-Yp-Y5k" id="XNA-T3-BzK"/>
+                        <outlet property="scoreLabel" destination="X9i-X9-Eoz" id="bea-fB-v2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

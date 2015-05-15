@@ -11,6 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var score :Int = 0{
+        didSet{
+            
+            scoreLabel.text = "\(score)" + "点"
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,8 +44,7 @@ class ViewController: UIViewController {
         imageView.addGestureRecognizer(leftGestrue)
         imageView.addGestureRecognizer(upGestrue)
         imageView.addGestureRecognizer(downGestrue)
-        
-        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,27 +54,68 @@ class ViewController: UIViewController {
     
     func rightSwipe(gestureRecognizer: UIGestureRecognizer){
         
-        imageView.image = UIImage(named: "右.jpg")
+        self.randomDog(0)
+        
+        
+        
     }
     
     func leftSwipe(gestureRecognizer: UIGestureRecognizer){
         
-        
-        imageView.image = UIImage(named: "左.jpg")
+        self.randomDog(1)
         
     }
     
     func upSwipe(gestureRecognizer: UIGestureRecognizer){
         
 
-        imageView.image = UIImage(named: "上.jpg")
+        self.randomDog(2)
+        
         
     }
     
     func downSwipe(gestureRecognizer: UIGestureRecognizer){
         
         
-        imageView.image = UIImage(named: "下.jpg")
+        self.randomDog(3)
+        
+    }
+    
+    func randomDog(direction :Int) {
+        
+        let randInt = arc4random_uniform(4);
+        
+        NSLog("\(randInt)")
+        
+        if randInt == 0 {
+            
+            imageView.image = UIImage(named: "右.jpg")
+            
+        } else if randInt == 1 {
+            
+            imageView.image = UIImage(named: "左.jpg")
+            
+        } else if randInt == 2 {
+            
+            imageView.image = UIImage(named: "上.jpg")
+            
+        } else if randInt == 3 {
+            
+            imageView.image = UIImage(named: "下.jpg")
+            
+        }
+        
+        if Int(randInt) == direction {
+            
+            
+            score++
+            
+        } else {
+            
+            
+            score = 0
+        }
+        
         
     }
 
