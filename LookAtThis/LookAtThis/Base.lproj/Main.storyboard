@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -17,16 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="前.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="soY-Yp-Y5k">
-                                <rect key="frame" x="135" y="75" width="330" height="450"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="5oo-xu-AmJ"/>
-                                    <constraint firstAttribute="width" secondItem="soY-Yp-Y5k" secondAttribute="height" multiplier="11:15" id="YvO-4U-99Y"/>
-                                    <constraint firstAttribute="height" constant="450" id="uK9-Dv-b6m"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-X9-Eoz">
-                                <rect key="frame" x="214" y="27" width="172" height="21"/>
+                                <rect key="frame" x="214" y="27" width="172" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="bng-ef-w8W"/>
                                 </constraints>
@@ -34,6 +26,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="前.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="soY-Yp-Y5k">
+                                <rect key="frame" x="182" y="138" width="237.5" height="324"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="5oo-xu-AmJ"/>
+                                    <constraint firstAttribute="width" secondItem="soY-Yp-Y5k" secondAttribute="height" multiplier="11:15" id="YvO-4U-99Y"/>
+                                    <constraint firstAttribute="height" constant="324" id="uK9-Dv-b6m"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5oo-xu-AmJ"/>
+                                        <exclude reference="uK9-Dv-b6m"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -41,7 +47,7 @@
                             <constraint firstAttribute="centerX" secondItem="X9i-X9-Eoz" secondAttribute="centerX" id="RU1-o2-mXC"/>
                             <constraint firstItem="X9i-X9-Eoz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="7" id="nPV-bW-2Q9"/>
                             <constraint firstAttribute="centerX" secondItem="soY-Yp-Y5k" secondAttribute="centerX" id="rMt-GG-WpQ"/>
-                            <constraint firstItem="soY-Yp-Y5k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="zA7-Vz-7ph"/>
+                            <constraint firstItem="soY-Yp-Y5k" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="118" id="zA7-Vz-7ph"/>
                         </constraints>
                     </view>
                     <connections>
