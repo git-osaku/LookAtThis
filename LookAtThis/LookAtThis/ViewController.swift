@@ -27,8 +27,6 @@ class ViewController: UIViewController {
     var entries = NSArray()
     let newsUrlString = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.itmedia.co.jp/rss/2.0/news_bursts.xml&num=8"
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -56,7 +54,9 @@ class ViewController: UIViewController {
         imageView.addGestureRecognizer(tapGestrue)
         
         self.getData()
-    
+        
+        //
+        println(UIDevice.currentDevice().identifierForVendor.UUIDString)
     }
 
     override func didReceiveMemoryWarning() {
