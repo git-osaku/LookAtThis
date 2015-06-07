@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-X9-Eoz">
-                                <rect key="frame" x="214" y="27" width="172" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-X9-Eoz">
+                                <rect key="frame" x="214" y="27" width="172" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="bng-ef-w8W"/>
                                 </constraints>
@@ -26,8 +27,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="前.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="soY-Yp-Y5k">
-                                <rect key="frame" x="182" y="138" width="237.5" height="324"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="前.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="soY-Yp-Y5k">
+                                <rect key="frame" x="182" y="138" width="238" height="324"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="238" id="5oo-xu-AmJ"/>
                                     <constraint firstAttribute="width" secondItem="soY-Yp-Y5k" secondAttribute="height" multiplier="11:15" id="YvO-4U-99Y"/>
@@ -40,10 +41,20 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMK-bR-HRA">
+                                <rect key="frame" x="279" y="95" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nMK-bR-HRA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="263" id="23T-Mu-o5b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nMK-bR-HRA" secondAttribute="trailing" constant="263" id="8nX-1L-lNR"/>
+                            <constraint firstItem="nMK-bR-HRA" firstAttribute="top" secondItem="X9i-X9-Eoz" secondAttribute="bottom" constant="26.5" id="B4T-js-KrW"/>
                             <constraint firstAttribute="centerY" secondItem="soY-Yp-Y5k" secondAttribute="centerY" id="OFk-f2-XHL"/>
+                            <constraint firstItem="soY-Yp-Y5k" firstAttribute="top" secondItem="nMK-bR-HRA" secondAttribute="bottom" constant="43" id="RSO-eK-lnZ"/>
                             <constraint firstAttribute="centerX" secondItem="X9i-X9-Eoz" secondAttribute="centerX" id="RU1-o2-mXC"/>
                             <constraint firstItem="X9i-X9-Eoz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="7" id="nPV-bW-2Q9"/>
                             <constraint firstAttribute="centerX" secondItem="soY-Yp-Y5k" secondAttribute="centerX" id="rMt-GG-WpQ"/>
@@ -52,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="soY-Yp-Y5k" id="XNA-T3-BzK"/>
+                        <outlet property="resultLabel" destination="nMK-bR-HRA" id="9JG-Ph-1i0"/>
                         <outlet property="scoreLabel" destination="X9i-X9-Eoz" id="bea-fB-v2z"/>
                     </connections>
                 </viewController>

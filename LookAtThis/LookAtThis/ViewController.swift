@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
 
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
     var score :Int = 0{
         didSet{
@@ -54,8 +55,7 @@ class ViewController: UIViewController {
         imageView.addGestureRecognizer(upGestrue)
         imageView.addGestureRecognizer(downGestrue)
         imageView.addGestureRecognizer(tapGestrue)
-        
-        self.getData()
+   
     
     }
 
@@ -67,6 +67,7 @@ class ViewController: UIViewController {
     func rightSwipe(gestureRecognizer: UIGestureRecognizer){
         
         self.randomDog(0)
+        
     }
     
     func leftSwipe(gestureRecognizer: UIGestureRecognizer){
@@ -100,7 +101,7 @@ class ViewController: UIViewController {
         
         let randInt = arc4random_uniform(4);
         
-        NSLog("\(randInt)")
+        //NSLog("\(randInt)")
         
         if randInt == 0 {
             
@@ -125,46 +126,21 @@ class ViewController: UIViewController {
             score++
             
         } else {
+            // 識別ID取得
+            var identificationId = UIDevice.currentDevice().identifierForVendor.UUIDString
             
+            // rankingAPI接続
+            var httpRequest = HttpRequestController()
+            var result: () = httpRequest.postData(identificationId, score: score)
             
+            if(result === "rankin") {
+                scoreLabel.text = "RANK IN!!!"
+            }
+            println(result)
             score = 0
         }
         
     }
     
-    func getData() {
-        
-        // create the url-request
-        let urlString = "http://192.168.33.10:8000/ranking"
-        var request = NSMutableURLRequest(URL: NSURL(string: urlString)!)
-        
-        // set the method(HTTP-POST)
-        request.HTTPMethod = "POST"
-        // set the header(s)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        // set the request-body(JSON)
-        var params: [String: AnyObject] = [
-            "foo": "bar",
-            "baz": [
-                "a": 1,
-                "b": 20,
-                "c": 300
-            ]
-        ]
-        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: nil)
-        
-        // use NSURLSessionDataTask
-        var task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {data, response, error in
-            if (error == nil) {
-                var result = NSString(data: data, encoding: NSUTF8StringEncoding)!
 
-                println(result)
-            } else {
-                println(error)
-                            }
-        })
-        task.resume()
-        
-    }
 }
