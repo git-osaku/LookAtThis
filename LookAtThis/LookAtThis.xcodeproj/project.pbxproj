@@ -18,6 +18,8 @@
 		965B15731B046A740063944C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965B15721B046A740063944C /* Images.xcassets */; };
 		965B15761B046A740063944C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965B15741B046A740063944C /* LaunchScreen.xib */; };
 		965B15821B046A740063944C /* LookAtThisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B15811B046A740063944C /* LookAtThisTests.swift */; };
+		966DFFB21B6B7174000DF319 /* TopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DFFB11B6B7174000DF319 /* TopPageViewController.swift */; };
+		966DFFB41B6F1157000DF319 /* RunkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DFFB31B6F1157000DF319 /* RunkingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		965B157B1B046A740063944C /* LookAtThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookAtThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965B15801B046A740063944C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965B15811B046A740063944C /* LookAtThisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAtThisTests.swift; sourceTree = "<group>"; };
+		966DFFB11B6B7174000DF319 /* TopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPageViewController.swift; sourceTree = "<group>"; };
+		966DFFB31B6F1157000DF319 /* RunkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunkingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				965B156B1B046A740063944C /* AppDelegate.swift */,
+				966DFFB11B6B7174000DF319 /* TopPageViewController.swift */,
+				966DFFB31B6F1157000DF319 /* RunkingViewController.swift */,
 				965B156D1B046A740063944C /* ViewController.swift */,
 				965B156F1B046A740063944C /* Main.storyboard */,
 				965B15721B046A740063944C /* Images.xcassets */,
@@ -233,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				965B156E1B046A740063944C /* ViewController.swift in Sources */,
+				966DFFB21B6B7174000DF319 /* TopPageViewController.swift in Sources */,
 				965B156C1B046A740063944C /* AppDelegate.swift in Sources */,
+				966DFFB41B6F1157000DF319 /* RunkingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

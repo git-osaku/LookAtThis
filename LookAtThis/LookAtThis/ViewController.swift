@@ -167,4 +167,10 @@ class ViewController: UIViewController {
         task.resume()
         
     }
+    
+    @IBAction func backButton(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
 }
